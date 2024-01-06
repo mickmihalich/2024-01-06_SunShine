@@ -1,0 +1,102 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.sunGrid {
+  display: grid;
+  min-width: 1064px;
+  max-width: 98vw;
+  /*border: rgb(0, 255, 64) 2px solid;*/
+  grid-template-columns: repeat(7, 1fr) 100px;
+  grid-auto-rows: minmax(152px, auto);
+}
+
+.sunGrid div {
+  border: #00B7FF solid 1px;
+  border-color: transparent;
+}
+
+.sun {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-image: url(/images/sunOff.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sunOn {
+  background-image: url(/images/sun.png);
+}
+
+.home1, .home2, .home3 {
+  grid-row-start: 3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/images/homeOff.png);
+}
+
+.homeOn{
+  background-image: url(/images/home.png);
+}
+  
+
+.home1 {
+  grid-column-start: 2;  
+}
+
+.home2 {
+  grid-column-start: 4;
+}
+
+.home3 {
+  grid-column-start: 6;
+}
+
+.menu {
+  position:absolute;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 80px;
+  /*border: rosybrown 1px solid;
+  background-color: rgba(137, 43, 226, 0.116);
+  border-radius: 10px;*/
+
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: minmax(20px, auto);
+}
+
+.power {
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  background-image: url(/images/powerOff.png);
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+button:before, .menu div:hover:before {
+	/*font-family: FontAwesome;*/
+	content:"👉";
+	position: absolute;
+  text-align: center;
+  display: none;
+	/*top: 11px;
+	left: -30px;*/
+  transition: all 100ms ease;
+}
+
+.menu div:hover:before, .menu button:hover:before {
+  display:inline-block;  
+}
+
+.powerOn {
+  background-image: url(/images/powerOn.png);
+}
