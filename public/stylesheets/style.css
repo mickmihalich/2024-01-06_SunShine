@@ -93,6 +93,10 @@ button:before, .menu div:hover:before {
   transition: all 100ms ease;
 }
 
+.btnLeft:before {
+  content: "👈";
+}
+
 .menu div:hover:before, .menu button:hover:before {
   display:inline-block;  
 }
