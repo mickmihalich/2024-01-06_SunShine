@@ -2,6 +2,14 @@
 <html>
   <head>
     <title><%= title %></title>
+    <!-- preloading all images -->
+    <link rel="preload" as="image" href="/images/sunOff.png">
+    <link rel="preload" as="image" href="/images/powerOff.png">
+    <link rel="preload" as="image" href="/images/sunOn.png">
+    <link rel="preload" as="image" href="/images/powerOn.png">
+    <link rel="preload" as="image" href="/images/home.png">
+    <link rel="preload" as="image" href="/images/homeOff.png">
+    <!-- css -->
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
@@ -16,6 +24,7 @@
       <button class="btnLeft">&leftarrow;</button><button>&rightarrow;</button></div>
     </div>  
 
+    <!-- js -->
     <script src="/javascripts/main.js"></script>
   </body>
 </html>

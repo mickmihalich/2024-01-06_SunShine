@@ -9,7 +9,7 @@ a {
 
 .sunGrid {
   display: grid;
-  min-width: 1064px;
+  min-width: 1164px;
   max-width: 98vw;
   /*border: rgb(0, 255, 64) 2px solid;*/
   grid-template-columns: repeat(7, 1fr) 100px;
