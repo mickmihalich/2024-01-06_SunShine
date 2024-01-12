@@ -64,7 +64,7 @@
   top: 20px;
   right: 20px;
   width: 100px;
-  height: 240px;
+  height: 320px;
   /*border: rosybrown 1px solid;
   background-color: rgba(137, 43, 226, 0.116);
   border-radius: 10px;*/
@@ -73,6 +73,7 @@
   grid-template-columns: 1fr, 1fr;
   /*grid-template-rows: minmax(20px, auto);*/
   grid-template-rows: auto;
+  gap: 5;
 }
 
 .menu2el {
@@ -125,4 +126,20 @@ button:before, .menu div:hover:before {
 
 .moonOn {
   background-image: url(/images/moon.gif);
+}
+
+.menu2el {  
+  display: flex;
+  text-align: end;
+  align-items: flex-end;
+  justify-content: center;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+.menu2el:before {
+  content: "";
+}
+
+button {
+  height: 50%;
 }
