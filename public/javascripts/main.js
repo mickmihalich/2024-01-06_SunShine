@@ -105,17 +105,6 @@ const onHome3 = (sun, moon) => {
     }
 }
 
-
-
-
-//test for change position of Sun
-/*let sunColumn = 4 + positionSun;
-let sun = document.querySelector(".sun");
-console.log('sun style:', sun.style);
-console.log('sunColumn:', sunColumn);
-sun.style.gridColumnStart = sunColumn;
-sun.style.gridColumnEnd = sunColumn + 1;*/
-
 //switch homes classes
 const swHome = () => {
     if (positionMoon == -3 || positionMoon == -1 || positionMoon == 1 || positionMoon == 3) {
