@@ -90,7 +90,7 @@
   
 }
 
-button:before, .menu div:hover:before {
+.menu button:before, .menu div.switchers:hover:before {
 	/*font-family: FontAwesome;*/
 	content:"👉";
 	position: absolute;
@@ -106,7 +106,7 @@ button:before, .menu div:hover:before {
   content: "👈";
 }
 
-.menu div:hover:before, .menu button:hover:before {
+.menu div.switchers:hover:before, .menu button:hover:before {
   display:inline-block;  
 }
 
@@ -136,10 +136,11 @@ button:before, .menu div:hover:before {
   text-shadow: 1px 1px 2px #aaa;
 }
 
-.menu2el:before {
-  content: "";
-}
 
+.menu div.menu2el:before {
+  content: " ";
+}
+*/
 button {
   height: 50%;
 }
